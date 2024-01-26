@@ -120,7 +120,7 @@ export default function AppView() {
 
         <Grid xs={12} md={6} lg={8}>
           <AppConversionRates
-            title="Conversion Rates"
+            title="Medical Conversion Rates  "
             subheader="(+43%) than last year"
             chart={{
               series: [
