@@ -28,8 +28,8 @@ export default function AppView() {
       <Grid container spacing={3}>
         <Grid xs={12} sm={6} md={3}>
           <AppWidgetSummary
-            title="Weekly Sales"
-            total={714000}
+            title="Weekly Visits"
+            total={4}
             color="success"
             icon={<img alt="icon" src="/assets/icons/glass/ic_glass_bag.png" />}
           />
@@ -37,8 +37,8 @@ export default function AppView() {
 
         <Grid xs={12} sm={6} md={3}>
           <AppWidgetSummary
-            title="New Users"
-            total={1352831}
+            title="New Problem"
+            total={20}
             color="info"
             icon={<img alt="icon" src="/assets/icons/glass/ic_glass_users.png" />}
           />
@@ -46,8 +46,8 @@ export default function AppView() {
 
         <Grid xs={12} sm={6} md={3}>
           <AppWidgetSummary
-            title="Item Orders"
-            total={1723315}
+            title="Medi Orders"
+            total={30}
             color="warning"
             icon={<img alt="icon" src="/assets/icons/glass/ic_glass_buy.png" />}
           />
@@ -55,8 +55,8 @@ export default function AppView() {
 
         <Grid xs={12} sm={6} md={3}>
           <AppWidgetSummary
-            title="Bug Reports"
-            total={234}
+            title="Reports"
+            total={14}
             color="error"
             icon={<img alt="icon" src="/assets/icons/glass/ic_glass_message.png" />}
           />
@@ -64,7 +64,7 @@ export default function AppView() {
 
         <Grid xs={12} md={6} lg={8}>
           <AppWebsiteVisits
-            title="Website Visits"
+            title=" Visits"
             subheader="(+43%) than last year"
             chart={{
               labels: [
@@ -109,10 +109,10 @@ export default function AppView() {
             title="Current Visits"
             chart={{
               series: [
-                { label: 'America', value: 4344 },
-                { label: 'Asia', value: 5435 },
-                { label: 'Europe', value: 1443 },
-                { label: 'Africa', value: 4443 },
+                { label: 'Surgeon ', value: 2 },
+                { label: 'ENT ', value: 5 },
+                { label: 'Paramedic  ', value: 14 },
+                { label: 'Nurse ', value: 44 },
               ],
             }}
           />
@@ -141,9 +141,9 @@ export default function AppView() {
 
         <Grid xs={12} md={6} lg={4}>
           <AppCurrentSubject
-            title="Current Subject"
+            title="Physical Activity"
             chart={{
-              categories: ['English', 'History', 'Physics', 'Geography', 'Chinese', 'Math'],
+              categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
               series: [
                 { name: 'Series 1', data: [80, 50, 30, 40, 100, 20] },
                 { name: 'Series 2', data: [20, 30, 40, 80, 20, 80] },
@@ -155,7 +155,7 @@ export default function AppView() {
 
         <Grid xs={12} md={6} lg={8}>
           <AppNewsUpdate
-            title="News Update"
+            title="Health Update"
             list={[...Array(5)].map((_, index) => ({
               id: faker.string.uuid(),
               title: faker.person.jobTitle(),
@@ -168,7 +168,7 @@ export default function AppView() {
 
         <Grid xs={12} md={6} lg={4}>
           <AppOrderTimeline
-            title="Order Timeline"
+            title="Medic Order Timeline"
             list={[...Array(5)].map((_, index) => ({
               id: faker.string.uuid(),
               title: [
@@ -190,22 +190,22 @@ export default function AppView() {
             list={[
               {
                 name: 'FaceBook',
-                value: 323234,
+                value: 323,
                 icon: <Iconify icon="eva:facebook-fill" color="#1877F2" width={32} />,
               },
               {
                 name: 'Google',
-                value: 341212,
+                value: 341,
                 icon: <Iconify icon="eva:google-fill" color="#DF3E30" width={32} />,
               },
               {
                 name: 'Linkedin',
-                value: 411213,
+                value: 411,
                 icon: <Iconify icon="eva:linkedin-fill" color="#006097" width={32} />,
               },
               {
                 name: 'Twitter',
-                value: 443232,
+                value: 443,
                 icon: <Iconify icon="eva:twitter-fill" color="#1C9CEA" width={32} />,
               },
             ]}
@@ -214,13 +214,13 @@ export default function AppView() {
 
         <Grid xs={12} md={6} lg={8}>
           <AppTasks
-            title="Tasks"
+            title=" Medicatation Tasks"
             list={[
-              { id: '1', name: 'Create FireStone Logo' },
-              { id: '2', name: 'Add SCSS and JS files if required' },
-              { id: '3', name: 'Stakeholder Meeting' },
-              { id: '4', name: 'Scoping & Estimations' },
-              { id: '5', name: 'Sprint Showcase' },
+              { id: '1', name: 'Antacids  ' },
+              { id: '2', name: 'Antibiotics' },
+              { id: '3', name: 'Anti-diabetic' },
+              { id: '4', name: 'Laxatives' },
+              { id: '5', name: 'Muscle Relaxants' },
             ]}
           />
         </Grid>
